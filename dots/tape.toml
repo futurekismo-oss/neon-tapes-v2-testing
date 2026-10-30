@@ -1,0 +1,12 @@
+[tape]
+name = "neon-lights"
+desc = "Tape installed from git@github.com:futurekismo-oss/neon-tapes-v2-testing"
+
+# [hooks]
+# insert = [
+#     # "hyprctl reload",
+#     # "pkill -SIGUSR2 waybar",
+# ]
+# eject = [
+#     # "hyprctl reload",
+# ]
