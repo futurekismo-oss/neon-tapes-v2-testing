@@ -1,0 +1,20 @@
+[tape]
+name = "sekaipop"
+desc = "A Featured Tape, Quite beautiful"
+
+[hooks]
+insert = [
+    "systemd-run --user --unit=sekaipop-qs qs -c sekaipop",
+    "pkill noctalia",
+    "hyprctl reload",
+]
+eject = [
+    "pkill -x qs || true",
+    "systemctl --user stop sekaipop-qs",
+    "noctalia -d",
+    "hyprctl reload",
+]
+
+install = [
+  "./setup.sh"
+]
